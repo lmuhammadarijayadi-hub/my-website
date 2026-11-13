@@ -1,0 +1,1043 @@
+/* =========================================
+   1. RESET DAN PENGATURAN DASAR
+========================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+html {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f5f7f5;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: auto !important;
+}
+
+:root {
+    --hijau-tua: #064e3b;
+    --hijau: #087f5b;
+    --hijau-muda: #d1fae5;
+    --emas: #d4a017;
+    --putih: #ffffff;
+    --abu: #f3f4f6;
+    --hitam: #222;
+}
+
+/* =========================================
+   2. NAVBAR DAN LOGO
+========================================= */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    padding: 12px 35px;
+    min-height: 85px;
+}
+
+.bg-1 {
+    background-color: var(--hijau-tua);
+}
+
+.fg-2 {
+    color: var(--putih);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: var(--hijau-tua);
+}
+
+.judul h1 {
+    color: var(--putih);
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.judul h4 {
+    color: #d1fae5;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 3px 0 0;
+    letter-spacing: 1px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 12px;
+    transition: 0.3s;
+    border: none;
+    background: transparent;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--emas);
+}
+
+.btn-icon {
+    border: 1px solid rgba(255,255,255,0.5);
+    background: transparent;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: white;
+}
+
+/* =========================================
+   3. DROPDOWN MENU
+========================================= */
+
+.menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+    padding: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    z-index: 1001;
+}
+
+.nav-item:hover > .menu {
+    display: block;
+}
+
+.menu-item {
+    display: block;
+    padding: 9px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background: var(--hijau-muda);
+    color: var(--hijau-tua);
+}
+
+/* =========================================
+   4. DRAWER NAVIGATION
+========================================= */
+
+.drawer {
+    border: none;
+    width: 320px;
+    max-width: 85%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0 0 0 auto;
+    padding: 20px;
+    background: white;
+    color: #333;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+    overflow-y: auto; 
+}
+
+.drawer .menu {
+    display: none;
+}
+
+.drawer .menu.aktif {
+    display: block !important;
+}
+
+.drawer::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.drawer-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.drawer-title {
+    color: var(--hijau-tua);
+    font-weight: 700;
+}
+
+.drawer-body {
+    padding-top: 15px;
+}
+
+.drawer .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+}
+
+.drawer .nav-link {
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+.drawer .nav-link:hover {
+    background: var(--hijau-muda);
+    color: var(--hijau-tua);
+}
+
+/* =========================================
+   5. CAROUSEL / SLIDESHOW
+========================================= */
+
+#carouselExampleInterval {
+    width: 100%;
+    padding: 120px 35px;
+    background: white;
+}
+
+.carousel-inner {
+    height: 480px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-indicators {
+    position: static;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.carousel-indicators button {
+    width: 30px;
+    height: 5px;
+    background-color: var(--hijau-tua);
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.carousel-control-play-pause {
+    border: none;
+    color: var(--hijau-tua);
+}
+
+/* =========================================
+   6. PENGATURAN MAIN DAN SECTION
+========================================= */
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+main > div {
+    padding: 75px 6%;
+    scroll-margin-top: 85px;
+}
+
+.profil,
+.akademik,
+.berita,
+.dosen,
+.mahasiswa,
+.agenda,
+.galeri,
+.informasi,
+.unduhan {
+    text-align: center;
+}
+
+.akademik,
+.berita,
+.mahasiswa,
+.galeri,
+.unduhan {
+    background-color: #edf5ef;
+}
+
+.dosen,
+.agenda,
+.informasi {
+    background-color: white;
+}
+
+/* =========================================
+   7. PROFIL
+========================================= */
+
+.profil {
+    background: linear-gradient(
+        135deg,
+        #064e3b,
+        #087f5b
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.content {
+    text-align: center;
+    max-width: 750px;
+}
+
+.judul-pro {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 19px;
+    color: #d1fae5;
+}
+
+.cta {
+    margin-top: 25px;
+}
+
+.btn-cta {
+    background-color: var(--emas);
+    color: #222;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: white;
+    transform: translateY(-4px);
+}
+
+/* =========================================
+   8. CARD DAN CARD ITEM
+========================================= */
+
+/* =========================================
+   DESAIN BARU WEBSITE STATISTIKA
+========================================= */
+
+/* Semua section */
+main > div {
+    width: 100%;
+    padding: 80px 5%;
+    scroll-margin-top: 85px;
+}
+
+/* Pembungkus card menggunakan CSS GRID */
+.card-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Desain setiap card */
+.card-item {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 22px;
+    background: white;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Gambar card */
+.card-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* Isi card */
+.card-item .card-title {
+    padding: 0 15px;
+    margin-top: 20px;
+    color: #064e3b;
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.card-item .card-description {
+    padding: 0 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   PROFIL
+========================================= */
+
+.profil {
+    background: linear-gradient(135deg, #064e3b, #087f5b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 90px 5%;
+}
+
+.profil .content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 25px;
+}
+
+.profil .judul-pro {
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: 800;
+}
+
+.profil .description {
+    font-size: 19px;
+}
+
+.profil .card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* =========================================
+   AKADEMIK
+========================================= */
+
+.akademik {
+    background: #f0f7f2;
+}
+
+.akademik .card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* =========================================
+   BERITA
+========================================= */
+
+.berita {
+    background: white;
+}
+
+.berita .card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* =========================================
+   DOSEN DAN STAF
+========================================= */
+
+.dosen {
+    background: #edf5ef;
+}
+
+.dosen .card-list {
+    grid-template-columns: minmax(0, 450px);
+    justify-content: center;
+}
+
+/* =========================================
+   MAHASISWA
+========================================= */
+
+.mahasiswa {
+    background: white;
+}
+
+.mahasiswa .card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* =========================================
+   AGENDA
+========================================= */
+
+.agenda {
+    background: #edf5ef;
+}
+
+.agenda .card-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* =========================================
+   GALERI
+========================================= */
+
+.galeri {
+    background: white;
+}
+
+.galeri .card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.galeri .card-item img {
+    height: 270px;
+}
+
+/* =========================================
+   INFORMASI
+========================================= */
+
+.informasi {
+    background: #edf5ef;
+}
+
+.informasi .card-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 850px;
+}
+
+/* =========================================
+   UNDuhan
+========================================= */
+
+.unduhan {
+    background: white;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .card-list,
+    .profil .card-list,
+    .akademik .card-list,
+    .berita .card-list,
+    .mahasiswa .card-list,
+    .galeri .card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card-item img {
+        height: 210px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media (max-width: 576px) {
+
+    
+
+    main > div {
+        padding: 55px 18px;
+    }
+
+    .card-list,
+    .profil .card-list,
+    .akademik .card-list,
+    .berita .card-list,
+    .mahasiswa .card-list,
+    .agenda .card-list,
+    .galeri .card-list,
+    .informasi .card-list,
+    .dosen .card-list {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 380px;
+        gap: 22px;
+    }
+
+    .card-item img {
+        height: 220px;
+    }
+
+    .profil .judul-pro {
+        font-size: 32px;
+    }
+
+}
+
+/* =========================================
+   17. SECTION UNDuhan
+========================================= */
+
+.unduhan .card-unduhan {
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow-wrap: anywhere;
+}
+
+.unduhan .card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unduhan .card-title {
+    padding: 0 15px;
+    margin-top: 20px;
+    color: #064e3b;
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.unduhan .card-description {
+    color: var(--hijau);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.unduhan .card-description:hover {
+    color: var(--emas);
+    text-decoration: underline;
+}
+
+/* =========================================
+   18. SECTION KONTAK
+========================================= */
+
+.kontak {
+    background: #f5f7f5;
+    padding: 70px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: var(--hijau-tua);
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.section-title p {
+    color: #777;
+}
+
+.info-item {
+    background: white;
+    min-height: 180px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+}
+
+.info-item i {
+    color: var(--hijau);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.info-item h3 {
+    color: var(--hijau-tua);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.info-item p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* =========================================
+   19. FORM KONTAK
+========================================= */
+
+.php-email-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.php-email-form input,
+.php-email-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+    border-color: var(--hijau);
+    box-shadow: 0 0 5px rgba(8,127,91,0.2);
+}
+
+.php-email-form button {
+    background: var(--hijau-tua);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.php-email-form button:hover {
+    background: var(--emas);
+    color: #222;
+}
+
+/* =========================================
+   20. FOOTER
+========================================= */
+
+footer {
+    background: var(--hijau-tua);
+    color: white;
+    padding: 35px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.wrapper > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.wrapper .title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.wrapper a:hover {
+    color: var(--emas);
+}
+
+.wrapper i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.wrapper i:hover {
+    color: var(--emas);
+    transform: scale(1.2);
+}
+
+.copy {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* =========================================
+   21. ANIMASI
+========================================= */
+
+.card-item {
+    animation: muncul 0.7s ease;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   22. RESPONSIVE TABLET
+========================================= */
+
+@media screen and (max-width: 992px) {
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .judul h1 {
+        font-size: 21px;
+    }
+
+    .judul h4 {
+        font-size: 11px;
+    }
+
+    .carousel-inner,
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .judul-pro {
+        font-size: 35px;
+    }
+
+    main > div {
+        padding: 60px 4%;
+    }
+
+    .card-item {
+        width: 240px;
+    }
+}
+
+/* =========================================
+   23. RESPONSIVE SMARTPHONE
+========================================= */
+
+@media screen and (max-width: 576px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .judul h1 {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .judul h4 {
+        font-size: 9px;
+        letter-spacing: 0;
+    }
+
+    #carouselExampleInterval {
+        padding: 10px;
+    }
+
+    .carousel-inner,
+    .carousel-item img {
+        height: 230px;
+        margin-top: 50px;
+    }
+
+    main > div {
+        padding: 45px 18px;
+    }
+
+    .judul-pro {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .card {
+        gap: 20px;
+    }
+
+    .card-item,
+    .akademik .card-item,
+    .berita .card-item,
+    .dosen .card-item,
+    .mahasiswa .card-item,
+    .agenda .card-item,
+    .galeri .card-item,
+    .informasi .card-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card-item img {
+        height: 200px;
+    }
+
+    .unduhan .card-unduhan {
+        padding: 20px;
+    }
+
+    .unduhan .card-description {
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .php-email-form {
+        padding: 20px;
+    }
+
+    .wrapper {
+        gap: 25px;
+    }
+
+    .wrapper > div {
+        width: 75px;
+    }
+}
+
+/* Drawer dialog */
+.drawer[open] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 0 0 auto;
+    animation: bukaDrawer 0.3s ease;
+}
+
+@keyframes bukaDrawer {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Carousel */
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+    animation: fadeSlide 0.7s ease;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Ikon play dan pause */
+.carousel-icon-pause::before {
+    content: "Ⅱ";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.carousel-icon-play::before {
+    content: "▶";
+    font-size: 18px;
+}
+
+.carousel-icon-play,
+.carousel-icon-pause {
+    display: none;
+}
+
+.carousel-control-play-pause.is-playing .carousel-icon-pause {
+    display: inline;
+}
+
+.carousel-control-play-pause:not(.is-playing) .carousel-icon-play {
+    display: inline;
+}
+
