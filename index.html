@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <title>WEB STATISTIKA</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-1 fg-2">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="assets/logo-remove3.webp" alt="logo" class="logo-img">
+                    <div class="judul">
+                        <h1>STATISTIKA</h1>
+                        <h4>UNIVERSITAS HAMZANWADI</h4>
+                    </div>
+                </div>
+                <button class="btn-icon navbar-toggler ms-auto" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavMenu" aria-labelledby="navbarNavMenuLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavMenuLabel">Beranda</h5>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#akademik">Akademik</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                        Berita
+                        </button>
+                        <div class="menu">
+                        <a class="menu-item" href="#berita">Action</a>
+                        <a class="menu-item" href="#berita">Another action</a>
+                        <a class="menu-item" href="#berita">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dosen-staf">Dosen/Staf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mahasiswa">Mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                        Agenda
+                        </button>
+                        <div class="menu" >
+                        <a class="menu-item" href="#agenda">Action</a>
+                        <a class="menu-item" href="#agenda">Another action</a>
+                        <a class="menu-item" href="#agenda">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                        Informasi
+                        </button>
+                        <div class="menu">
+                        <a class="menu-item" href="#informasi">Action</a>
+                        <a class="menu-item" href="#informasi">Another action</a>
+                        <a class="menu-item" href="#informasi">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unduhan">Unduhan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    </ul>
+                </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-autoplay="true">
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active" data-bs-interval="2000">
+            <img src="assets/foto1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+            <img src="assets/foto2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+            <img src="assets/foto4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselExampleInterval" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
+            <span class="carousel-icon-pause" aria-hidden="true"></span>
+            <span class="carousel-icon-play" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="profil" id="profil">
+            <div class="content">
+                <p class="judul-pro">Program Studi Statistika</p>
+                <p class="description">Mencetak Data Analyst & Data Scientist Berdaya Saing Global</p>
+                <div class="cta">
+                <button class="btn-cta" onclick="redirWhatsapp()" >Mari Berkolaborasi</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/foto3.jpeg" alt="Visi dan Misi" class="foto-profile">
+                    <p class="card-title">VISI DAN MISI</p>
+                    <p class="card-description">Pada tahun 2041 menjadi program studi statistika yang berdaya saing global berbasis budaya santri dalam menghasilkan lulusan data analyst dan data scientist yang profesional, berintegritas, inovatif, serta mampu memberikan kontribusi nyata bagi kemajuan ilmu pengetahuan dan pembangunan masyarakat.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/foto6.jpeg" alt="Sejarah Singkat" class="foto-profile">
+                    <p class="card-title">SEJARAH & IDENTITAS</p>
+                    <p class="card-description">Berdiri sebagai wujud komitmen Universitas Hamzanwadi dalam menjawab tantangan era revolusi industri dan transformasi digital. Program studi ini memadukan keilmuan analisis data modern dengan nilai-nilai luhur pesantren untuk membentuk karakter akademisi yang unggul dan berakhlak mulia.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/worshop.jpg" alt="Prospek Lulusan" class="foto-profile">
+                    <p class="card-title">PROSPEK KARIER LULUSAN</p>
+                    <p class="card-description">Lulusan dibekali kompetensi mendalam di bidang pemodelan statistika, machine learning, dan komputasi data sehingga siap berkarier sebagai Data Scientist, Data Analyst, Aktuaris, Peneliti Kebijakan Publik, maupun Konsultan Riset di berbagai sektor industri nasional maupun multinasional.</p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="akademik" id="akademik">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/pojok1.jpeg" alt="Pojok Statistik" class="foto-akademik">
+                    <p class="card-title">POJOK STATISTIK</p>
+                    <p class="card-description">Layanan kolaborasi antara kampus dan Badan Pusat Statistik (BPS) yang berfungsi sebagai pusat literasi data, konsultasi metodologi penelitian, serta ruang diskusi terbuka bagi sivitas akademika dan masyarakat umum untuk memanfaatkan data resmi negara secara tepat guna.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/images (1).jpg" alt="Kurikulum Kampus Merdeka" class="foto-akademik">
+                    <p class="card-title">KURIKULUM MERDEKA BELAJAR</p>
+                    <p class="card-description">Kurikulum dirancang adaptif berbasis Outcome-Based Education (OBE) yang mengintegrasikan teori probabilitas, komputasi R dan Python, serta program magang industri agar mahasiswa memiliki pengalaman praktik langsung dalam memecahkan persoalan berbasis data riil.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/e-book.jpg" alt="E-Book dan Modul" class="foto">
+                    <p class="card-title">PERPUSTAKAAN DIGITAL & E-BOOK</p>
+                    <p class="card-description">Akses penuh terhadap ribuan referensi e-book statistika terapan, modul praktikum komputasi, jurnal ilmiah terindeks, serta perangkat lunak analisis data berlisensi yang mendukung kelancaran proses perkuliahan dan penyusunan tugas akhir mahasiswa.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/PElatihan_agen.jpg" alt="Pelatihan Agen Statistik" class="foto">
+                    <p class="card-title">PELATIHAN AGEN STATISTIK</p>
+                    <p class="card-description">Program pembinaan intensif untuk mencetak mahasiswa terpilih sebagai duta literasi statistik kampus yang bertugas mendampingi pengolahan data survei, memberikan edukasi metodologi riset, serta menyosialisasikan pentingnya pengambilan keputusan berbasis data.</p>     
+                    </div>
+            </div>
+        </div>
+
+        <div class="berita" id="berita">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/berita1.jpg" alt="Kuliah Umum Data Science" class="foto-berita">
+                    <p class="card-title">KULIAH UMUM BIG DATA & AI</p>
+                    <p class="card-description">Program Studi Statistika sukses menyelenggarakan kuliah umum bertema pemanfaatan kecerdasan buatan dan Big Data dalam perencanaan pembangunan daerah yang menghadirkan pakar praktisi industri teknologi serta peneliti senior sebagai pembicara utama.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/berita2.jpeg" alt="Kunjungan Industri" class="foto-berita">
+                    <p class="card-title">KUNJUNGAN STUDI KE BPS PROVINSI</p>
+                    <p class="card-description">Mahasiswa semester akhir melaksanakan kunjungan lapangan ke kantor Badan Pusat Statistik untuk mempelajari secara langsung alur sensus nasional, validasi data lapangan, hingga proses publikasi indikator ekonomi dan sosial masyarakat secara akurat.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/berita3.jpeg" alt="Kerjasama Riset" class="foto-berita">
+                    <p class="card-title">PENANDATANGANAN MOU RISET TERAPAN</p>
+                    <p class="card-description">Memperluas jejaring kemitraan strategis bersama instansi pemerintah daerah dan lembaga survei independen guna mendukung program penelitian kolaboratif, pendampingan desa cinta statistik, serta penyediaan lokasi magang bersertifikat bagi mahasiswa.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/berita4.jpeg" alt="Prestasi Mahasiswa" class="foto-berita">
+                    <p class="card-title">JUARA LOMBA INFOGRAFIS NASIONAL</p>
+                    <p class="card-description">Tim mahasiswa statistika berhasil meraih penghargaan bergengsi pada kompetisi visualisasi data dan infografis tingkat nasional melalui karya analisis ketahanan pangan dan kemiskinan ekstrem yang disajikan secara interaktif dan informatif.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/berita5.png" alt="Pengabdian Masyarakat" class="foto-berita">
+                    <p class="card-title">PROGRAM DESA CANTIK BINAAN</p>
+                    <p class="card-description">Implementasi Tri Dharma Perguruan Tinggi melalui pendampingan perangkat desa dalam membangun sistem pendataan profil kependudukan dan potensi UMKM berbasis digital agar perencanaan anggaran desa menjadi lebih tepat sasaran dan transparan.</p>     
+                    </div>
+            </div>
+        </div>
+
+        <div class="dosen" id="dosen-staf">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/dosen.jpg" alt="Dosen dan Tenaga Kependidikan" class="foto-ds">
+                    <p class="card-title">DOSEN & TENAGA KEPENDIDIKAN</p>
+                    <p class="card-description">Didukung oleh jajaran dosen berkualifikasi magister dan doktor lulusan perguruan tinggi ternama dengan kepakaran di bidang statistika matematika, ekonometrika, biostatistika, komputasi, serta sains data yang aktif mempublikasikan riset di jurnal bereputasi nasional maupun internasional dan siap membimbing mahasiswa secara intensif.</p>     
+                    </div>
+                </div>
+        </div>
+
+        <div class="mahasiswa" id="mahasiswa">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/mahasiswa.jpg" alt="Himpunan Mahasiswa Statistika" class="foto-mahasiswa">
+                    <p class="card-title">HIMPUNAN MAHASISWA STATISTIKA</p>
+                    <p class="card-description">Wadah organisasi kemahasiswaan yang aktif mengasah jiwa kepemimpinan, kerja sama tim, dan kreativitas melalui berbagai program kerja intelektual, pengabdian sosial, pelatihan perangkat lunak analisis data, serta kegiatan pengembangan minat dan bakat.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/mahasiswa2.jpeg" alt="Komunitas Data Science" class="foto-mahasiswa">
+                    <p class="card-title">KOMUNITAS BELAJAR DATA SCIENCE</p>
+                    <p class="card-description">Kelompok studi mahasiswa yang rutin mengadakan sesi bedah kasus pemrograman R, Python, SQL, dan machine learning setiap pekan sebagai persiapan menghadapi berbagai kompetisi sains data nasional maupun sertifikasi keahlian profesi.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/PElatihan_agen.jpg" alt="Klinik Konsultasi Skripsi" class="foto-mahasiswa2">
+                    <p class="card-title">KLINIK KONSULTASI OLAH DATA</p>
+                    <p class="card-description">Inisiatif pendampingan sebaya oleh mahasiswa tingkat akhir dan asisten laboratorium untuk membantu rekan mahasiswa lintas fakultas dalam memahami pemilihan uji hipotesis, perancangan kuesioner, hingga interpretasi hasil output perangkat lunak statistik.</p>     
+                    </div>
+            </div>
+        </div>
+
+        <div class="agenda" id="agenda">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/agenda.jpg" alt="Seminar Nasional Statistika" class="foto-agenda">
+                    <p class="card-title">SEMINAR NASIONAL STATISTIKA</p>
+                    <p class="card-description">Forum ilmiah tahunan yang mempertemukan akademisi, peneliti, praktisi industri, dan mahasiswa dari seluruh Indonesia untuk mempresentasikan hasil penelitian terbaru seputar pemodelan stokastik, data mining, dan inovasi metode survei.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/agenda1.jpg" alt="Bootcamp R dan Python" class="foto-agenda">
+                    <p class="card-title">BOOTCAMP PEMROGRAMAN R & PYTHON</p>
+                    <p class="card-description">Pelatihan intensif selama tiga hari yang membahas teknik pembersihan data (data wrangling), eksplorasi visualisasi modern, hingga pembangunan model prediksi berbasis machine learning untuk menyelesaikan studi kasus bisnis dan pemerintahan.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/agenda2.jpg" alt="Olimpiade Statistika" class="foto-agenda">
+                    <p class="card-title">KOMPETISI INFOGRAFIS & ANALISIS DATA</p>
+                    <p class="card-description">Ajang kompetisi tingkat pelajar dan mahasiswa se-Nusa Tenggara untuk menguji ketajaman analisis kuantitatif serta kemampuan bercerita menggunakan data (data storytelling) dalam merumuskan solusi isu pembangunan berkelanjutan.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/agenda3.jpg" alt="Workshop Penulisan Jurnal" class="foto-agenda">
+                    <p class="card-title">WORKSHOP PENULISAN ARTIKEL ILMIAH</p>
+                    <p class="card-description">Bimbingan teknis penulisan karya ilmiah terstandar SINTA dan Scopus bagi mahasiswa tingkat akhir agar hasil penelitian skripsi dapat dipublikasikan secara luas pada jurnal ilmiah bereputasi sebelum kelulusan.</p>     
+                    </div>
+            </div>
+        </div>
+
+        <div class="galeri" id="galeri">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/galeri.jpg" alt="Dokumentasi Praktikum" class="foto-galeri">
+                    <p class="card-title">AKTIVITAS LABORATORIUM KOMPUTASI</p>
+                    <p class="card-description">Dokumentasi suasana pembelajaran interaktif di laboratorium komputer statistika saat mahasiswa mempraktikkan simulasi Monte Carlo, analisis deret waktu (time series), dan pemodelan regresi spasial menggunakan perangkat lunak terkini.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/galeri1.jpg" alt="Dokumentasi Yudisium" class="foto-galeri">
+                    <p class="card-title">MOMEN YUDISIUM & PELEPASAN WISUDAWAN</p>
+                    <p class="card-description">Potret kebanggaan prosesi pengukuhan lulusan sarjana statistika yang siap mengabdikan ilmu analisis data di dunia kerja profesional dengan membawa semangat integritas, inovasi, dan nilai-nilai keislaman.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/galeri2.jpg" alt="Dokumentasi Pengabdian" class="foto-galeri">
+                    <p class="card-title">KEGIATAN BAKTI SOSIAL & LITERASI DATA</p>
+                    <p class="card-description">Kebersamaan dosen dan mahasiswa saat turun langsung ke sekolah-sekolah menengah serta komunitas masyarakat untuk memperkenalkan manfaat statistika dalam kehidupan sehari-hari melalui metode edukasi yang menyenangkan.</p>     
+                    </div>
+            </div>
+        </div>
+
+        <div class="informasi" id="informasi">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-item">
+                    <img src="assets/informasi.jpeg" alt="Penerimaan Mahasiswa Baru" class="foto-informasi">
+                    <p class="card-title">PENERIMAAN MAHASISWA BARU</p>
+                    <p class="card-description">Informasi lengkap mengenai jalur pendaftaran reguler, jalur prestasi akademik maupun non-akademik, jadwal seleksi masuk, serta berbagai pilihan program beasiswa KIP-Kuliah dan beasiswa yayasan bagi calon mahasiswa baru.</p>     
+                    </div>
+                    <div class="card-item">
+                    <img src="assets/informasi1.jpg" alt="Kalender Akademik" class="foto-informasi">
+                    <p class="card-title">KALENDER & PANDUAN AKADEMIK</p>
+                    <p class="card-description">Pengumuman resmi terkait jadwal pengisian Kartu Rencana Studi (KRS), pelaksanaan Ujian Tengah Semester (UTS) dan Ujian Akhir Semester (UAS), pendaftaran seminar proposal, hingga jadwal sidang skripsi tahun akademik berjalan.</p>     
+                    </div>
+            </div>
+        </div>
+
+        <div class="unduhan" id="unduhan">
+            <div class="card-list animate__animated animate__pulse">
+                    <div class="card-unduhan">
+                    <p class="card-title">JURNAL EXBAR (PUBLIKASI ILMIAH)</p>
+                    <p class="card-description">Publikasi penelitian mengenai penerapan metode statistika non-parametrik Uji Mann-Whitney dalam membandingkan capaian prestasi akademik mahasiswa Program Studi Statistika Universitas Hamzanwadi antar angkatan sebagai bahan evaluasi mutu pembelajaran.</p>
+                    <a href="https://www.researchgate.net/publication/392754279_PENERAPAN_UJI_MANN-WHITNEY_DALAM_PERBANDINGAN_PRESTASI_AKADEMIK_MAHASISWA_STATISTIKA_UNIVERSITAS_HAMZANWADI_ANGKATAN_2022_DAN_2023" target="_blank" class="card-description">Unduh & Baca Selengkapnya di ResearchGate</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="kontak" id="kontak">
+           <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Contact us for academic information, research collaboration, or data consultation</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+                <div class="col-lg-6 ">
+                    <div class="row gy-4">
+
+                    <div class="col-lg-12">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-geo-alt"></i>
+                        <h3>Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-telephone"></i>
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@example.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+
+                        <div class="col-md-6 ">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                        <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                        <button type="submit">Send Message</button>
+                        </div>
+
+                    </div>
+                    </form>
+                </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+            </section>
+        </div>  
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-center">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h class="title"><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></h>
+                </div>
+                <div class="text-center">
+                <i class="fa-brands fa-google"></i>
+                <h class="title"><a href="https://www.google.com" target="_blank">Google</a></h>
+                </div>
+                <div class="text-center">
+                <i class="fa-brands fa-youtube"></i>
+                <h class="title"><a href="https://www.youtube.com" target="_blank">Youtube</a></h>
+                </div>
+                <div class="text-center">
+                <i class="fa-brands fa-twitter"></i>
+                <h class="title"><a href="https://twitter.com" target="_blank">Twitter</a></h>
+                </div>
+                <div class="text-center">
+                <i class="fa-brands fa-tiktok"></i>
+                <h class="title"><a href="https://www.tiktok.com" target="_blank">Tiktok</a></h>
+                </div>
+                </div>
+                    <p class="copy">Copyright &copy; 2026. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
